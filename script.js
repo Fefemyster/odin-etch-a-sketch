@@ -1,14 +1,14 @@
 //Create the divs using JavaScript.
-const row = document.querySelector(".row");
+const container = document.querySelector(".container");
 
-let totalDivs = 16;
+let total = 256;
 
-for (i = 0; i < totalDivs; i++) {
-  const div = document.createElement("div");
-  row.appendChild(div);
-  div.classList.add("column");
+function createContainer() {
+  for (i = 0; i < total; i++) {
+    const div = document.createElement("div");
+    container.appendChild(div);
+    div.classList.add("column");
+  }
 }
 
-//I need 16 divs in a row - Done!
-//Now I need 16 rows of 16 divs for creating the 16x16 grid
-//Discard previous idea of stacking 2 layouts on top of each since it didn't work as expected
+createContainer();
