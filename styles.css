@@ -3,25 +3,17 @@ body {
   padding: 0;
 }
 
-.containerColumn {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  width: 100%;
-}
-
-.containerRow {
-  background-color: blue;
+.row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  height: 100%;
-  width: 100%;
 }
 
-div {
-  color: pink;
+.column {
+  border-style: solid;
+  border-color: blue;
+  background-color: pink;
+  height: 100px;
+  width: 100px;
   padding: 10px;
+  flex: 1;
 }
