@@ -3,6 +3,14 @@ body {
   padding: 0;
 }
 
+.btn {
+  padding: 10px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
 .container {
   display: flex;
   flex-wrap: wrap;
